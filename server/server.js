@@ -31,12 +31,8 @@ app.use(express.json());
 app.use(cors());
 app.use("/my-upload", express.static("my-upload"));
 
-app.get("/", (req, res) => res.send({ status: "200", message: "OK" }));
-
 app.post("/send-email", upload.array("files"), (req, res) => {
   const { name, email, subject, message } = req.body;
-  console.log(name, email, subject, message);
-  console.log("files", req.files);
   const files = req.files;
   let mailOptions = {
     from: email,
