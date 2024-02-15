@@ -37,7 +37,7 @@ const NavBar = () => {
   return (
     <section id="navbar">
       {/* Navbar container */}
-      <div className=" fixed w-full p-10  z-9999 top-0 bg-gray-100 dark:bg-darkBlue">
+      <div className=" fixed w-full px-10 py-6 z-9999 top-0 bg-violet-200 dark:bg-darkBlue">
         <div className="flex justify-between text-center">
           {/* Logo*/}
           <div className=" flex justify-center lg:text-2xl font-sixtyfour items-center text-center  font-bold tracking-widest hover:text-accentCyan">

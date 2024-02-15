@@ -100,7 +100,7 @@ const Skills = () => {
       {/* Skills container */}
       <div className="flex flex-col space-y-16 p-10">
         {/* Title */}
-        <div className=" text-3xl md:text-4xl font-semibold underline tracking-wider">
+        <div className=" text-3xl md:text-4xl font-semibold underline ">
           Skills
         </div>
         <div className="grid grid-cols grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-10 ">
@@ -108,7 +108,7 @@ const Skills = () => {
             skills.map((skill, index) => (
               <div
                 key={index}
-                className="flex flex-col justify-center items-center text-center space-y-3 mx-auto hover:opacity-90 md:hover:opacity-80 hover:scale-125 hover:cursor-pointer shadow-xl"
+                className="flex flex-col justify-center items-center text-center space-y-3 mx-auto hover:opacity-90 md:hover:opacity-80 hover:scale-125 hover:cursor-pointer shadow-xl hover:bg-violet-300 hover:dark:bg-darkBlue3"
               >
                 <img src={skill.obj} alt="" className="w-28" />
                 <div className="uppercase font-semibold">{skill.name}</div>

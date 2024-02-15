@@ -75,7 +75,7 @@ const Contact = () => {
     <section id="contact" className="mt-32 scroll-mt-20">
       <div className="flex flex-col space-y-10 p-10 mx-auto">
         {/* Title */}
-        <div className="text-3xl md:text-4xl font-semibold underline tracking-wider text-start  ">
+        <div className="text-3xl md:text-4xl font-semibold underline text-start ">
           Contact
         </div>
         {/* Contact Container */}
@@ -148,8 +148,8 @@ const Contact = () => {
                 />
                 <label
                   htmlFor="name"
-                  className={`font-semibold absolute input-lable bottom-2 left-0 text-darkViolet dark:text-white peer-focus/name:bottom-10  ${
-                    name.length ? " bottom-10" : ""
+                  className={`font-light absolute input-lable  left-0 text-darkViolet dark:text-white peer-focus/name:bottom-10  ${
+                    name.length ? " bottom-10" : " bottom-2"
                   }`}
                 >
                   Name
@@ -169,8 +169,8 @@ const Contact = () => {
                 />
                 <label
                   htmlFor="email"
-                  className={`font-semibold absolute bottom-2 left-0 text-darkViolet dark:text-white peer-focus/email:bottom-10 ${
-                    email.length ? "bottom-10" : ""
+                  className={`font-light absolute  left-0 text-darkViolet dark:text-white peer-focus/email:bottom-10 ${
+                    email.length ? "bottom-10" : " bottom-2"
                   }`}
                 >
                   Email
@@ -190,8 +190,8 @@ const Contact = () => {
                 />
                 <label
                   htmlFor="name"
-                  className={`font-semibold absolute input-lable bottom-2 left-0 text-darkViolet dark:text-white  peer-focus/subject:bottom-10
-                  ${subject.length > 0 ? "bottom-10" : ""}`}
+                  className={`font-light absolute input-lable  left-0 text-darkViolet dark:text-white  peer-focus/subject:bottom-10
+                  ${subject.length > 0 ? "bottom-10" : " bottom-2"}`}
                 >
                   Subject
                 </label>
@@ -210,8 +210,8 @@ const Contact = () => {
                 />
                 <label
                   htmlFor="name"
-                  className={` font-semibold absolute input-lable bottom-4 left-0 text-darkViolet dark:text-white  peer-focus/subject:-top-4
-                  ${message.length > 0 ? "-top-4" : ""}`}
+                  className={` font-light absolute input-lable  left-0 text-darkViolet dark:text-white  peer-focus/subject:-top-6
+                  ${message.length > 0 ? "-top-6" : " bottom-4"}`}
                 >
                   Message
                 </label>

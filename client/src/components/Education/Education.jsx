@@ -28,7 +28,7 @@ const Education = () => {
     <section id="education" className="mt-32  scroll-mt-32">
       <div className="flex flex-col space-y-10 justify-start items-start p-10">
         {/* Title */}
-        <div className=" text-3xl md:text-4xl font-semibold underline tracking-wider">
+        <div className=" text-3xl md:text-4xl font-semibold underline">
           Education
         </div>
         {/* Education Container */}
@@ -37,7 +37,7 @@ const Education = () => {
             degrees.map((degree) => (
               // {/* Education Card */}
               <div
-                className="flex space-x-4 shadow-2xl bg-gray-100 dark:bg-darkBlue3 rounded-xl p-6"
+                className="flex space-x-4 shadow-2xl bg-gray-100 dark:bg-darkBlue3 rounded-xl p-6 hover:bg-violet-300 hover:dark:bg-orange-400 duration-200"
                 key={degree.id}
               >
                 {/* University logo */}

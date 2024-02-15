@@ -5,7 +5,7 @@ import LinkedinIcon from "../../assets/linkedin_icon.png";
 const Footer = () => {
   return (
     <section id="footer" className="mt-20">
-      <div className="flex flex-col item-center justify-center text-center p-10 space-y-8 md:flex-row md:space-y-0 md:justify-between bg-gray-100 dark:bg-darkBlue">
+      <div className="flex flex-col item-center justify-center text-center p-10 space-y-8 md:flex-row md:space-y-0 md:justify-between bg-violet-200 dark:bg-darkBlue">
         {/* Logo */}
         <div className=" flex justify-center lg:text-2xl font-sixtyfour items-center text-start  font-bold tracking-widest hover:text-accentCyan">
           Duyen Tran

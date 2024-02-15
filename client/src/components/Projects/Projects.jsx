@@ -124,7 +124,7 @@ const Projects = () => {
     <section id="projects" className="mt-20 scroll-mt-20">
       <div className="flex flex-col space-y-10 p-10">
         {/* Title */}
-        <div className=" text-3xl md:text-4xl font-semibold underline tracking-wider">
+        <div className=" text-3xl md:text-4xl font-semibold underline">
           Projects
         </div>
         {/* Projects container */}
@@ -134,7 +134,7 @@ const Projects = () => {
               return (
                 //Project Card container
                 <div
-                  className="grid grid-cols-1 md:grid-cols-3 gap-y-10 p-6 md:gap-x-4 md:gap-y-0 bg-gray-100 dark:bg-darkBlue3 rounded-xl shadow-xl  justify-items-center md:justify-items-start"
+                  className="grid grid-cols-1 md:grid-cols-3 gap-y-10 p-6 md:gap-x-4 md:gap-y-0 bg-gray-100 dark:bg-darkBlue3 rounded-xl shadow-xl  justify-items-center md:justify-items-start hover:bg-violet-300 hover:dark:bg-orange-400  duration-300"
                   key={project.id}
                 >
                   <div className="flex flex-col space-y-3 items-center justify-center text-center text-white font-semibold tracking-widest">
