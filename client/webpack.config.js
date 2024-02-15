@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   entry: path.resolve(__dirname, "src", "index.js"),
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     filename: "[name].bundle.js",
     // assetModuleFilename: "assets/[hash][ext][query]",
     assetModuleFilename: "assets/[name][ext][query]",
@@ -14,7 +14,7 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.resolve(__dirname, "dist"),
+      directory: path.resolve(__dirname, "build"),
     },
     port: 5000,
     open: true,
