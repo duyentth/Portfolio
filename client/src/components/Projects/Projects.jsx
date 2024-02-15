@@ -1,29 +1,123 @@
 import React from "react";
 import BookMarkImg from "../../assets/bookmark.png";
+import ClipboardImg from "../../assets/clipboard.png";
+import FyloImg from "../../assets/fylo.png";
+import LoopstudiosImg from "../../assets/loopstudios.png";
+import ShortlyImg from "../../assets/shortly.png";
+import TestimonialImg from "../../assets/testimonial-grid.png";
 import GithubImg from "../../assets/github.png";
+import RefurbishedGoodImg from "../../assets/RefurbishedGood.png";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      name: "Bookmark Website",
-      technologies: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
-      features: ["Responsive Website", "Using Flex Box Model"],
-      image: BookMarkImg,
+      name: `Refurbished Good Marketplace (MERN Stack App)`,
+      technologies: [
+        "HTML",
+        "Tailwind CSS",
+        "Ant Design",
+        "React JS",
+        "Node JS",
+        "Express JS",
+        "Multer",
+        "Mongoose",
+        "Cloudinary",
+        "Stripe",
+      ],
+      features: [
+        "Fully Responsive Website",
+        "Upload and access files to/from Cloudinary",
+        "Manage all products, users, bids with CRUD",
+        "Secure payment with Stripe",
+        "Send notificaton for each change of status on products, users, bids",
+        "Secure user signing up and logging in with jsonwebtoken(JWT)",
+      ],
+      image: RefurbishedGoodImg,
+      liveDemoLink: "https://refurbished-goods-marketplace-app.onrender.com/",
+      codeLink: "https://github.com/duyentth/RefurbishedGoodsMarketForDeploy",
     },
+
     {
       id: 2,
-      name: "Bookmark Website",
-      technologies: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
-      features: ["Responsive Website", "Using Flex Box Model"],
-      image: BookMarkImg,
+      name: "Clipboard Website",
+      technologies: ["HTML", "Tailwind CSS", "JavaScript"],
+      features: [
+        "Fully Responsive Website",
+        "Flex Box Model",
+        "Transform behaviour",
+      ],
+      image: ClipboardImg,
+      liveDemoLink: "https://clipboard-tv80.onrender.com/",
+      codeLink:
+        "https://github.com/duyentth/Tailwind-CSS-Projects/blob/main/README.md",
     },
     {
       id: 3,
+      name: "Fylo Website",
+      technologies: ["HTML", "Tailwind CSS", "JavaScript"],
+      features: [
+        "Fully Responsive Website",
+        "Flex Box Model",
+        "Transform behaviour",
+        "Light/Dark Mode",
+      ],
+      image: FyloImg,
+      liveDemoLink: "https://fylo-p03y.onrender.com/",
+      codeLink:
+        "https://github.com/duyentth/Tailwind-CSS-Projects/blob/main/README.md",
+    },
+    {
+      id: 4,
+      name: "Loopstudios Website",
+      technologies: ["HTML", "Tailwind CSS", "JavaScript"],
+      features: [
+        "Fully Responsive Website",
+        "Flex Box Model",
+        "Transform behaviour",
+      ],
+      image: LoopstudiosImg,
+      liveDemoLink: "https://loopstudios-ytbl.onrender.com/",
+      codeLink:
+        "https://github.com/duyentth/Tailwind-CSS-Projects/blob/main/README.md",
+    },
+    {
+      id: 5,
+      name: "Shortly Website",
+      technologies: ["HTML", "Tailwind CSS", "JavaScript"],
+      features: [
+        "Fully Responsive Website",
+        "Flex Box Model",
+        "Transform behaviour",
+      ],
+      image: ShortlyImg,
+      liveDemoLink: "https://shortly-rfjt.onrender.com/",
+      codeLink:
+        "https://github.com/duyentth/Tailwind-CSS-Projects/blob/main/README.md",
+    },
+    {
+      id: 6,
+      name: "Testimonial-Grid Website",
+      technologies: ["HTML", "Tailwind CSS", "JavaScript"],
+      features: ["Fully Responsive Website", "Grid Box Model"],
+      image: TestimonialImg,
+      liveDemoLink: "https://testimonial-grid-mvml.onrender.com/",
+      codeLink:
+        "https://github.com/duyentth/Tailwind-CSS-Projects/blob/main/README.md",
+    },
+    {
+      id: 7,
       name: "Bookmark Website",
-      technologies: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
-      features: ["Responsive Website", "Using Flex Box Model"],
+      technologies: ["HTML", "Tailwind CSS", "JavaScript"],
+      features: [
+        "Fully Responsive Website",
+        "Flex Box Model",
+        "Transform behaviour",
+      ],
       image: BookMarkImg,
+      liveDemoLink: "https://bookmark-ytz5.onrender.com/",
+      codeLink:
+        "https://github.com/duyentth/Tailwind-CSS-Projects/blob/main/README.md",
     },
   ];
   return (
@@ -52,13 +146,15 @@ const Projects = () => {
                     />
                     {/* Buttons */}
                     <a
-                      href="#"
+                      href={project.liveDemoLink}
+                      target="_blank"
                       className="rounded-lg px-4 py-2 w-full shadow-xl ring-1 ring-accentCyan bg-accentCyan text-white hover:bg-gray-50 hover:text-darkViolet hover:scale-105"
                     >
                       Live Demo
                     </a>
                     <a
-                      href="#"
+                      href={project.codeLink}
+                      target="_blank"
                       className="flex  px-4 py-2 justify-center items-center rounded-lg shadow-xl ring-1 ring-accentCyan bg-accentCyan text-white hover:bg-gray-50 hover:text-darkViolet hover:scale-105 w-full"
                     >
                       <img src={GithubImg} alt="" className="w-6 h-6 mr-2 " />
@@ -107,9 +203,7 @@ const Projects = () => {
                         <div className=" overflow-hidden group-focus:max-h-screen max-h-0 transition duration-500 ">
                           <ul className=" list-disc list-inside p-4">
                             {project.technologies.map((tech, index) => (
-                              <li key={index} className="uppercase">
-                                {tech}
-                              </li>
+                              <li key={index}>{tech}</li>
                             ))}
                           </ul>
                         </div>
@@ -148,9 +242,7 @@ const Projects = () => {
                         <div className=" overflow-hidden group-focus:max-h-screen max-h-0 transition duration-500 ">
                           <ul className=" list-disc list-inside p-4">
                             {project.features.map((tech, index) => (
-                              <li key={index} className="uppercase">
-                                {tech}
-                              </li>
+                              <li key={index}>{tech}</li>
                             ))}
                           </ul>
                         </div>
