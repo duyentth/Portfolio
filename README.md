@@ -19,7 +19,7 @@ Then open an other terminal window, run `cd client` to jump into `client` folder
 - HTML, CSS, JavaScript
 - Tailwind CSS, PostCSS
 - React, NodeJS, ExpressJS
-- TypeWritter, Multer, NodeMailer
+- TypeWriter-effect, Multer, Nodemailer
 - Webpack
 
 ## Features
@@ -28,4 +28,4 @@ Then open an other terminal window, run `cd client` to jump into `client` folder
 - Light/Dark mode
 - Showing many projects with links to live demo and code repositories
 - Contact form with validation and sending Email with files attached using NodeMailer, Multer
-- Writing text using Typewritter-effect
+- Writing text using Typewriter-effect
