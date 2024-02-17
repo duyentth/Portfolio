@@ -19,7 +19,7 @@ Then open an other terminal window, run `cd client` to jump into `client` folder
 - HTML, CSS, JavaScript
 - Tailwind CSS, PostCSS
 - React, NodeJS, ExpressJS
-- TypeWritter, Multer, NodeMailer
+- TypeWriter-effect, Multer, NodeMailer
 - Webpack
 
 ## Features
