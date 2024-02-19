@@ -179,7 +179,7 @@ const Projects = () => {
                         <div className="flex justify-between items-center space-x-6 group transition duration-500 cursor-pointer">
                           {/* <!-- Tab title --> */}
                           <div className="transition duration-500 group-hover:text-accentCyan">
-                            What are technologies used?
+                            What are technologies used in project?
                           </div>
                           {/* <!-- Arrow --> */}
 
@@ -218,7 +218,7 @@ const Projects = () => {
                         <div className="flex justify-between items-center group transition duration-500 cursor-pointer">
                           {/* <!-- Tab title --> */}
                           <div className="transition duration-500 group-hover:text-accentCyan">
-                            What are features created?
+                            What are features of project?
                           </div>
                           {/* <!-- Arrow --> */}
 
