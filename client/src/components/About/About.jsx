@@ -5,18 +5,15 @@ import CV from "../../assets/resume.pdf";
 
 const About = () => {
   const myself =
-    "<ul>" +
-    "<li>Dedicated <strong>Full Stack JavaScript Developer</strong> with <strong>3+ years </strong>" +
-    "professional experience, renowned for <strong>delivering innovative solutions</strong>" +
-    " across a spectrum of projects.</li>" +
-    "<li>Proficient in a multitude of modern technologies, including <strong>ReactJS, Angular, " +
-    "Tailwind CSS, Ant Design, Webpack, Babel, NodeJS, TypeScript, Express, RESTful API, MongoDB, Amazon Web Services.</strong></li>" +
-    "<li>Well-versed in testing methodologies, having utilized <strong>React Testing Library and Jest</strong>" +
-    " to ensure the <srtong>reliability</srong> of applications under development. </li>" +
-    "<li>Passion for <strong>problem-solving</strong>, coupled with ability to thrive under high-pressure situations" +
-    " and deliver <strong>high-quality solutions</strong>.</li> " +
-    "<li>Approach every challenge with a <strong>lifelong learning mindset</strong>," +
-    " constantly seeking opportunities to expand skill set and stay current with the rapidly evolving tech landscape.</li>";
+    "<ul class='list-inside list-disc'>" +
+    "<li>Detail-oriented and technically proficient Full Stack Developer with a Master’s degree in Software Engineering" +
+    " from Maharishi International University and a solid foundation in modern web technologies.</li>" +
+    "<li>Recently trained in key technologies including React, TypeScript, JavaScript, Java, Node.js, Express, RESTful APIs," + 
+    " GraphQL, MongoDB and more.</li>" +
+    "<li> Proven ability to design and develop responsive, user-centric web applications. </li>" +
+    "<li>Highly motivated and eager to leverage current skills and continuous learning mindset to contribute effectively as " +
+    "a Full Stack Developer. </li>" +
+  "<li>Strong communicator and team player, committed to delivering high-quality work and staying updated with industry trends.</li> </ul>";
   return (
     <section id="about" className="mt-36 scroll-mt-36 ">
       {/* About container */}
