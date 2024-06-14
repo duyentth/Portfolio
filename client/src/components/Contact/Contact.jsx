@@ -90,7 +90,7 @@ const Contact = () => {
                 className="w-6 h-6 rounded-full inline"
               />{" "}
               <span className="font-semibold">Email:</span>{" "}
-              duyen.th.tran@gmail.com
+              duyen.tran@outlook.com
             </div>
             <div>
               <img
@@ -114,7 +114,7 @@ const Contact = () => {
                 Github
               </a>
               <a
-                href="https://www.linkedin.com/in/duyen-th-tran"
+                href="https://www.linkedin.com/in/duyen-tn/"
                 className="cursor-pointer hover:text-accentCyan"
                 target="_blank"
               >
